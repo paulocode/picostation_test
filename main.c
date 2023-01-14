@@ -250,11 +250,9 @@ void initialize() {
 
     pio_enable_sm_mask_in_sync(pio0, (1u << CPU_CLK_SM) | (1u << I2S_DATA_SM) | (1u << LRCK_DATA_SM));
 
-    sleep_ms(50);
-
     gpio_set_dir(RESET, GPIO_OUT);
     gpio_put(RESET,0);
-    sleep_ms(300);
+    sleep_ms(100);
     gpio_set_dir(RESET, GPIO_IN);
 
     while((time_us_64() - startTime) < 30000) {
