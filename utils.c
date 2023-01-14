@@ -4,11 +4,11 @@
 #include "utils.h"
 
 extern inline int tobcd(int in) {
-	if (in > 99) {
-		return 0x99;
-	} else {
-	    return (in / 10) << 4 | (in % 10);
-	}
+    if (in > 99) {
+        return 0x99;
+    } else {
+        return (in / 10) << 4 | (in % 10);
+    }
 }
 
 extern inline uint32_t reverseBits(uint32_t num, int bits) {
@@ -23,9 +23,9 @@ extern inline uint32_t reverseBits(uint32_t num, int bits) {
 }
 
 extern inline int track_to_sector(int track) {
-	return pow(track, 2) * 0.00031499 + track * 9.357516535;
+    return pow(track, 2) * 0.00031499 + track * 9.357516535;
 }
 
 extern inline int sectors_per_track(int track) {
-	return round(track * 0.000616397 + 9);
+    return round(track * 0.000616397 + 9);
 }
