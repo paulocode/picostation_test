@@ -279,8 +279,6 @@ int main() {
     sleep_ms(1);
     stdio_init_all();
 
-    sleep_ms(5000);
-
     initialize();
 
     while (true) {
