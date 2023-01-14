@@ -1,6 +1,6 @@
 # picostation_test
 
-This version was a rewrite of the original picostation code which plays CDDA images. This version does not boot games and I was not able to figure out why (yet). I'm releasing it as a quick way to test early adopter picostation boards. This can also serve as a starting point for anyone who wants to write an ODE. This was tested ONLY on PU-18. As this is meant as test code, please do not make a pull request on this code.
+This version was a rewrite of the original picostation code which plays CDDA images. This version (+ data CD code) does not boot games and I was not able to figure out why (yet). I'm releasing it as a quick way to test early adopter picostation boards. This can also serve as a starting point for anyone who wants to write an ODE. This was tested ONLY on PU-18. As this is meant as test code, please do not make a pull request on this code.
 
 <img src="https://github.com/paulocode/picostation_test/raw/main/cdda_pu18.jpg" alt="pcb" height="400"/>
 
